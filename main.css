@@ -1,0 +1,78 @@
+/* Reset default margin and set font */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #a7adb3;
+}
+
+nav {
+  background-color: #4169E1;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Individual menu links */
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  color: #FFF44F;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on links */
+nav ul li a:hover {
+  background-color: #FFF44F;
+  color: #4169E1;
+  cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #4169E1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  color: #FFF44F;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #FFF44F;
+  color: #4169E1;
+}
+
+/* Show dropdown on hover (desktop) */
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Class used for JS toggle on mobile */
+.dropdown-menu.hidden {
+  display: none;
+}
+.dropdown-menu.visible {
+  display: block;
+}
