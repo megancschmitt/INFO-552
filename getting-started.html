@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Started</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="hiring-hub.html">Hiring Hub</a></li>
+        <li><a href="for-parents-and-caretakers.html">For Parents and Caretakers</a></li>
+        <li><a href="more-resources.html">More Resources</a></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+<h1>Ready Set Work!</h1>
+
+<div style="display: flex; gap: 20px; margin-top: 20px;">
+    <button onclick="toggleLegalWorkInfo()" class="styled-button">Can I Legally Work?</button>
+    <button onclick="togglePermitInfo()" class="styled-button">How Do I Get My Work Permit?</button>
+    <a href="checklist-for-success.html" class="styled-button" style="text-decoration: none;">Check List For Success</a>
+    <a href="building-your-brand.html" class="styled-button" style="text-decoration: none;">Building Your Brand</a>
+</div>
+
+<div id="legalWorkInfo" style="display: none; margin-top: 20px;">
+    <p>The <a href="https://www.pa.gov">Commonwealth of Pennsylvania</a> allows children between the ages of <strong>14 - 17</strong> to work but only with a <a href="https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/resources/codes-and-regulations/application%20for%20work-permit.pdf">Work Permit</a>. You can learn more about the Pennsylvania Child Labor Law <a href="https://www.pa.gov/agencies/education/programs-and-services/schools/school-services/child-labor-law.html">here</a>.</p>
+</div>
+
+<div id="permitInfo" style="display: none; margin-top: 20px;">
+    <p>You will need to work with the <a href="https://www.philasd.org/cte/#workingpapers">School District of Philadelphia</a> to get your Work Permit.</p>
+    <p><strong>From August 27, 2024, through June 12, 2025, between 3PM-5PM, you can apply for your Work Permit in person at the following locations:</strong></p>
+    <ul>
+        <li>West Philadelphia High School, 4901 Chestnut St, Philadelphia, PA 19139 <strong>TUESDAYS ONLY</strong> </li>
+        <li>Philadelphia High School, 2101 S Broad St, Philadelphia, PA 19148 <strong>WEDNESDAYS ONLY</strong> </li>
+        <li>High School, 3201 Ryan Ave, Philadelphia, PA 19136 <strong>THURSDAYS ONLY</strong> </li>
+          When: Saturdays 8:30am-12:30pm, from 9/14/24 – 6/28/25
+          Where: 440 N. Broad St, Philadelphia, PA 19130</li>
+    </ul>
+    <p><strong>From September 14, 2024 through June 28, 2025, between 8:30AM-12:30PM, you can apply for your Work Permit in person at the following location:</strong></p>
+    <ul>
+      <li>Education Center, 440 N. Broad St, Philadelphia, PA 19130 <strong>SATURDAYS ONLY</strong></li>
+  
+</div>
+
+<div id="brandInfo" style="display: none; margin-top: 20px;">
+    <p>Building your brand is essential for showcasing your skills and talents. This section provides tips on creating a resume, portfolio, and leveraging social media to stand out.</p>
+    <ul>
+        <li>Define your personal brand identity.</li>
+        <li>Use social media effectively to highlight your achievements.</li>
+        <li>Create a consistent message across all platforms.</li>
+    </ul>
+</div>
+
+<script>
+    function toggleLegalWorkInfo() {
+        const legalWorkInfo = document.getElementById('legalWorkInfo');
+        legalWorkInfo.style.display = legalWorkInfo.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function togglePermitInfo() {
+        const permitInfo = document.getElementById('permitInfo');
+        permitInfo.style.display = permitInfo.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+  </main>
+  <footer>
+    <p>&copy; 2025 Megan Cross Schmitt. All rights reserved.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

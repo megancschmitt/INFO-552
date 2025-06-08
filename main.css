@@ -1,0 +1,118 @@
+body {
+  margin: 0 40px; /* Adds 40px margin to both left and right sides */
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Modern professional font */
+  background-color: #ffe082; /* Pale yellow for a clean background */
+  color: #2C2C2C; /* Slightly darker gray for better contrast */
+  font-size: 18px; /* Slightly larger font size for readability */
+  line-height: 1.8; /* Improved line height for better spacing */
+}
+
+nav {
+  background-color: #5A9BD5; /* Lighter blue for better contrast */
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Individual menu links */
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  color: #ffe082; /* Darker yellow for better contrast */
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on links */
+nav ul li a:hover {
+  background-color: #357ABD; /* Slightly darker blue for hover effect */
+  color: #ffffff; /* Keep text white */
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Consistent font for headings */
+  font-weight: bold; /* Emphasize headings */
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #222222; /* Slightly darker gray for headings */
+}
+
+p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Consistent font for paragraphs */
+  font-size: 18px; /* Slightly larger font size for readability */
+  line-height: 1.8; /* Improved line height for better spacing */
+  text-align: justify; /* Align text for a clean look */
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #2C2C2C; /* Slightly darker gray for readable text */
+}
+
+.images {
+  display: flex; /* Align images horizontally */
+  justify-content: center; /* Center images within the section */
+  gap: 20px; /* Add spacing between images */
+  margin-top: 20px; /* Add spacing above the image section */
+}
+
+.images img {
+  width: 100%; /* Make images responsive */
+  max-width: 500px; /* Increase maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #5A9BD5; /* Add a border to the images */
+  border-radius: 10px; /* Add rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.images img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.styled-button {
+    background-color: #2b0d96;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #57595c;
+}
+
+.uniform-size {
+  width: 350px; /* Set uniform width */
+  height: 250px; /* Set uniform height */
+  object-fit: cover; /* Ensure images fit within the dimensions */
+  border: 2px solid #5A9BD5; /* Add a border for consistency */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+figcaption {
+    text-align: center; /* Center the captions */
+    font-size: 14px; /* Adjust font size for readability */
+    color: #333333; /* Dark gray for readable text */
+    margin-top: 5px; /* Add spacing above the caption */
+}
